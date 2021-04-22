@@ -15,7 +15,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark p-4 border-bottom" aria-label="Девятый пример навигационной панели">
     <div class="container-xl">
-        <a class="navbar-brand text-warning" href="/"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">РеAL  ьные профи</span></span></a>
+        <a class="navbar-brand text-warning" href="/"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">РеALьные профи</span></span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL"
                 aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Переключить навигацию">
             <span class="navbar-toggler-icon"></span>
