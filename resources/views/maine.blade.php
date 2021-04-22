@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title')РеALьные пацаны@endsection
+@section('title')РеALьные профи@endsection
 
 @section('content')
         <iframe
