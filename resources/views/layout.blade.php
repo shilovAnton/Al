@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -13,7 +13,7 @@
 </head>
 <body class="bg-dark">
 
-<nav class="navbar navbar-expand-lg navbar-dark p-4 border-bottom" aria-label="Девятый пример навигационной панели">
+<nav class="navbar navbar-expand-lg navbar-dark border-bottom" aria-label="Девятый пример навигационной панели">
     <div class="container-xl">
         <a class="navbar-brand text-warning" href="/"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">РеALьные профи</span></span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL"
