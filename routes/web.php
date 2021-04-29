@@ -11,8 +11,14 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
-    return view('maine');
+    foreach (\App\Order::all() as $order) {
+        echo $order->name;
+        echo '<br>';
+    }
+   // return view('maine');
 });
 
 Route::get('/timesheet', function () {
