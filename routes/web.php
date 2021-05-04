@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     foreach (\App\Order::all() as $order) {
-        echo $order->name;
+        echo $order->product_area;
         echo '<br>';
     }
    // return view('maine');

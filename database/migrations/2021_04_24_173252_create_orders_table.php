@@ -16,11 +16,11 @@ class CreateOrdersTable extends Migration
         Schema::create('orders',
             function (Blueprint $table) {
                 $table->bigIncrements('id');
-                $table->integer('number')->unique();
+                $table->integer('number');
                 $table->integer('dept');
                 $table->string('name', 120);
                 $table->enum('status', ['готов', 'в работе']);
-                $table->float('product area', 8, 2);
+                $table->float('product_area', 8, 2);
                 $table->timestamps();
             });
     }

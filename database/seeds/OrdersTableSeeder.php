@@ -19,7 +19,7 @@ class OrdersTableSeeder extends Seeder
                     'dept' => random_int(1, 10),
                     'name' => 'Заказ ' . $i,
                     'status' => 'готов',
-                    'product area' => random_int(1, 50),
+                    'product_area' => random_int(1, 50),
                 ]
             );
         }
