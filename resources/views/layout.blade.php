@@ -45,7 +45,7 @@
         </div>
     </nav>
 
-    <div class="container embed-responsive embed-responsive-1by1" style="height: 800px;">
+    <div class="container" style="height: 800px;">
         @yield('content')
     </div>
 

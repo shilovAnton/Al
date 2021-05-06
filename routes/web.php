@@ -13,14 +13,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    foreach (\App\Order::all() as $order) {
-        echo $order->product_area;
-        echo '<br>';
-    }
-   // return view('maine');
-});
+Route::get('/', 'MainController@home');
 
-Route::get('/timesheet', function () {
-    return view('timesheet');
-});
+Route::get('/timesheet', 'MainController@timesheet');
