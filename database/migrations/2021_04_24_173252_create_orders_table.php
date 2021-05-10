@@ -11,7 +11,7 @@ class CreateOrdersTable extends Migration
      *
      * @return void
      */
-    public function up()
+    public function up(): void
     {
         Schema::create('orders',
             function (Blueprint $table) {
@@ -20,23 +20,24 @@ class CreateOrdersTable extends Migration
                 $table->integer('dept');
                 $table->string('name', 120);
                 $table->enum('status', ['готов', 'в работе']);
-                $table->float('product_area', 8, 2); //Площадь изделия
-                $table->float('sliding', 8, 2); // Раздвижка
-                $table->float('blind', 8, 2); // Глухарь
-                $table->float('impost', 8, 2); // Импост
-                $table->float('P400/02', 8, 2); // Р400/02
-                $table->float('blind_angle', 8, 2); // Глухарь углы
-                $table->float('m/n', 8, 2); // м/с
-                $table->float('door_mono_cold', 8, 2); // Дверь хол одно створка
-                $table->float('door_double_cold', 8, 2); // Дверь хол двух створка
-                $table->float('stained_glass_cold', 8, 2); // Витраж холодный
-                $table->float('door_mono_warm', 8, 2); // Дверь тёплая одно створка
-                $table->float('door_double_warm', 8, 2); // Дверь тёплая двух створка
-                $table->float('stained_glass_warm', 8, 2); // Витраж тёплый
-                $table->float('non-standard', 8, 2); // Не стандарт
-                $table->float('facade', 8, 2); // Фасад
-                $table->float('sandwich', 8, 2); // Сэндвич
-                $table->float('cost', 8, 2); // Стоимость заказа
+                $table->float('product_area'); //Площадь изделия
+                $table->float('sliding'); // Раздвижка
+                $table->float('blind'); // Глухарь
+                $table->integer('impost'); // Импост
+                $table->float('P400_02'); // Р400/02
+                $table->float('blind_angle'); // Глухарь углы
+                $table->float('m/n'); // м/с
+                $table->float('door_mono_cold'); // Дверь хол одно створка
+                $table->float('door_double_cold'); // Дверь хол двух створка
+                $table->float('stained_glass_cold'); // Витраж холодный
+                $table->float('door_mono_warm'); // Дверь тёплая одно створка
+                $table->float('door_double_warm'); // Дверь тёплая двух створка
+                $table->float('stained_glass_warm'); // Витраж тёплый
+                $table->float('non-standard'); // Не стандарт
+                $table->float('facade'); // Фасад
+                $table->float('sandwich'); // Сэндвич
+                $table->float('cost')->nullable(); // Стоимость заказа
+                $table->float('product_area_fact'); // Стоимость заказа
                 $table->timestamps();
             });
     }
@@ -46,7 +47,7 @@ class CreateOrdersTable extends Migration
      *
      * @return void
      */
-    public function down()
+    public function down(): void
     {
         Schema::dropIfExists('orders');
     }

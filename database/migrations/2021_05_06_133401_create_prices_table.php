@@ -9,14 +9,16 @@ class CreatePricesTable extends Migration
     /**
      * Run the migrations.
      *
+     * Таблица расценок
+     *
      * @return void
      */
     public function up()
     {
         Schema::create('prices', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string(50, 'job_name');
-            $table->integer('price_of_work');
+            $table->string('job_name', 50); // Вид работ
+            $table->integer('price_of_work'); // Цена
         });
     }
 
