@@ -8,7 +8,6 @@ class OrdersTableSeeder extends Seeder
     /**
      * Run the database seeds.
      *
-     * @return float|int|void
      * @throws Exception
      */
 
